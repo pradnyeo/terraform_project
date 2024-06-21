@@ -173,3 +173,6 @@ resource "aws_lb_listener" "http-listener" {
 output "albdns" {
   value = aws_lb.web-alb.dns_name
 }
+output "ec2PublicIP" {
+  value = aws_instance.WebServer-1.public_ip
+}
